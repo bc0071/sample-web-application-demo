@@ -1,0 +1,13 @@
+pipeline {
+  agent any
+  stages {
+    stage ('SCM Checkout') {
+      steps {
+        git 'https://github.com/bc0071/sample-web-application'
+      }
+    }
+    stage ('Say Hi') {
+      sh "echo 'Say Hi'"
+    }
+  }
+}
