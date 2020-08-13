@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage ('SCM Checkout') {
       steps {
-        git 'https://github.com/bc0071/sample-web-application'
+        git 'https://github.com/bc0071/sample-web-application-demo'
       }
     }
     stage ('Say Hi') {
